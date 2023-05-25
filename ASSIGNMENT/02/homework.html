@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <title>Document</title>
+    <style>
+        .img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+         border-radius: 50%;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+     
+        .name{
+            font-size: 5ch ;
+          font-weight: 1000;
+          text-align: center;
+
+        }
+        .para{
+            font-size: 2.5ch ;
+          font-weight: 500;
+          text-align: center;
+        }
+        .body{
+            background-color:rgb(5, 91, 122);
+            color: aliceblue;
+        }
+        .folo1{ 
+            width: 33.33%;
+         
+         display: inline-block;
+        text-align: center;
+        font-size: xx-large;
+        font-weight: 700;
+        color: black;
+        }
+        .folo2{ 
+            width: 33.33%;
+         
+         display: inline-block;
+        text-align: center;
+        font-size: xx-large;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        
+        }
+        .btn{
+            
+            width: 50%;
+         
+         display: inline-block;
+        text-align: center;
+        font-size: xx-large;
+        font-weight: 700;
+        color: black;
+        
+        }
+        .bt{
+            width: 30%;
+            height: 30%;
+            font-size: 2.8ch;
+            border-radius: 8%;
+            background-color: pink;
+        }
+        .bt:hover{
+            background-color: red;
+        }
+      
+
+
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+<script>
+    let demo = 
+    React.createElement('div', {class:'body'},[React.createElement('img',{src:'https://lh3.googleusercontent.com/a/AAcHTtevreb57byQIr3HtOr4tiwwy5imf7sAspvnMiM8Gw=s360-c-no',
+    height:'300px',
+    class:'img'}),
+    React.createElement('h1',{class:'name'},"Ashish Nadoda"),
+    React.createElement('p',{class:'para'},"english nai aati ho jayegi palcement?"),
+    React.createElement("br",null),
+    React.createElement("br",null),
+    React.createElement("div",{class:'folo1'},"200"),
+    React.createElement("div",{class:'folo1'},"1M"),
+    React.createElement("div",{class:'folo1'},"00"),
+    React.createElement("div",{class:'folo2'},"POST"),
+    React.createElement("div",{class:'folo2',},"FOLLOWERS"),
+    React.createElement("div",{class:'folo2'},"FOLLOWING"),
+    React.createElement("br",null),
+    React.createElement("br",null),
+    React.createElement("br",null),
+    React.createElement("br",null), React.createElement("br",null), React.createElement("br",null), 
+    React.createElement("div",{class:'btn'},[React.createElement('button',{class:'bt'},"Follow")]),
+    React.createElement("div",{class:'btn'},[React.createElement('button',{class:'bt'},"Message")]),
+    React.createElement("br",null), React.createElement("br",null), React.createElement("br",null),
+   
+
+    
+]
+)
+ReactDOM.render(
+    demo,
+    document.getElementById('root')
+);
+</script>
+ 
+</body>
+</html>
